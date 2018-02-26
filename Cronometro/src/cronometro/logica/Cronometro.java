@@ -84,19 +84,18 @@ public class Cronometro {
     public void guardarMemoria() {
         Memoria m = new Memoria();
         
-        m.setDecimas(decimas);
-        m.setSegundos(segundos);
-        m.setMinutos(minutos);
-        m.setHoras(horas);
+        m.getDecimas().setValor(decimas.getValor());
+        m.getSegundos().setValor(segundos.getValor());
+        m.getMinutos().setValor(minutos.getValor());
+        m.getHoras().setValor(horas.getValor());
         
         memorias.add(m);
         
     }
 
     public void mostrarMemorias() {
-        for (Memoria next : memorias) {
-            System.out.println(next.obtenerTiempo());
-            System.out.println(next);
+        for (Memoria memoria : memorias) {
+            System.out.println("memoria : " + memoria.obtenerTiempo());
         }
     }
 

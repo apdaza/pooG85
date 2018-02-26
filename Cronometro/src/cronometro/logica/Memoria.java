@@ -20,7 +20,7 @@ public class Memoria {
         segundos = new UnidadTiempo(60);
         minutos = new UnidadTiempo(60);
         horas = new UnidadTiempo(24);
-    }
+    }  
 
     public UnidadTiempo getDecimas() {
         return decimas;
