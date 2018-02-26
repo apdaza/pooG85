@@ -36,7 +36,7 @@ public class UnidadTiempo {
     }
 
     public String obtenerValorFormateado() {
-        if (this.valor < 10) {
+        if (this.valor < 10 && this.tope > 10) {
             return "0" + this.valor;
         } else {
             return String.valueOf(this.valor);
@@ -47,6 +47,13 @@ public class UnidadTiempo {
         valor++;
         if (valor == tope) {
             valor = 0;
+        }
+    }
+    
+    public void retroceder(){
+        valor--;
+        if(valor < 0){
+            valor = tope - 1;
         }
     }
 

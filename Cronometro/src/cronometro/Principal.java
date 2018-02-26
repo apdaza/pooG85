@@ -28,6 +28,11 @@ public class Principal {
         }
         System.out.println("Memorias");
         c.mostrarMemorias();
+        System.out.println("Retrocediendo");
+        for(int i = 0; i < 1000; i++){
+            c.retroceder();
+            System.out.println(c.obtenerTiempo());
+        }
     }
     
 }

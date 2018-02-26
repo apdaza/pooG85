@@ -6,7 +6,6 @@
 package cronometro.logica;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 /**
  *
@@ -69,6 +68,19 @@ public class Cronometro {
                 minutos.avanzar();
                 if (minutos.getValor() == 0) {
                     horas.avanzar();
+                }
+            }
+        }
+    }
+    
+    public void retroceder(){
+        decimas.retroceder();
+        if(decimas.getValor()==decimas.getTope()-1){
+            segundos.retroceder();
+            if(segundos.getValor()==segundos.getTope()-1){
+                minutos.retroceder();
+                if(minutos.getValor()==minutos.getTope()-1){
+                    horas.retroceder();
                 }
             }
         }
