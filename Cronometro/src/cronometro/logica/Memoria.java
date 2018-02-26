@@ -21,37 +21,21 @@ public class Memoria {
         minutos = new UnidadTiempo(60);
         horas = new UnidadTiempo(24);
     }  
-
-    public UnidadTiempo getDecimas() {
-        return decimas;
+    
+    public void setValorDecimas(int valor){
+        decimas.setValor(valor);
     }
-
-    public void setDecimas(UnidadTiempo decimas) {
-        this.decimas = decimas;
+    
+    public void setValorSegundos(int valor){
+        segundos.setValor(valor);
     }
-
-    public UnidadTiempo getSegundos() {
-        return segundos;
+    
+    public void setValorMinutos(int valor){
+        minutos.setValor(valor);
     }
-
-    public void setSegundos(UnidadTiempo segundos) {
-        this.segundos = segundos;
-    }
-
-    public UnidadTiempo getMinutos() {
-        return minutos;
-    }
-
-    public void setMinutos(UnidadTiempo minutos) {
-        this.minutos = minutos;
-    }
-
-    public UnidadTiempo getHoras() {
-        return horas;
-    }
-
-    public void setHoras(UnidadTiempo horas) {
-        this.horas = horas;
+    
+    public void setValorHoras(int valor){
+        horas.setValor(valor);
     }
     
     public String obtenerTiempo(){

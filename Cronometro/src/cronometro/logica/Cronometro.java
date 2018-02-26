@@ -84,10 +84,10 @@ public class Cronometro {
     public void guardarMemoria() {
         Memoria m = new Memoria();
         
-        m.getDecimas().setValor(decimas.getValor());
-        m.getSegundos().setValor(segundos.getValor());
-        m.getMinutos().setValor(minutos.getValor());
-        m.getHoras().setValor(horas.getValor());
+        m.setValorDecimas(decimas.getValor());
+        m.setValorSegundos(segundos.getValor());
+        m.setValorMinutos(minutos.getValor());
+        m.setValorHoras(horas.getValor());
         
         memorias.add(m);
         
